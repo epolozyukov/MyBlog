@@ -5,7 +5,7 @@ from projects.models import Project
 def project_index(request):
     projects = Project.objects.all()
     context = {"projects": projects}
-    return render(request, "1.html", context)
+    return render(request, "project_index.html", context)
 
 
 def project_detail(request, pk):
